@@ -1,0 +1,131 @@
+Лабораториска вежба 1, 203067
+
+1.Имам профил на git hub.
+2.Гранката ми е преименувана во master.
+3.Креирав репозиториум со името на вежбата и мојот индекс.
+4.mkdir SI_Lab
+cd SI_Lab
+git init
+git remote add origin https://github.com/kokialeksov23/SI_2022_lab1_203067.git
+git remote -v
+git clone https://github.com/kokialeksov23/SI_2022_lab1_203067.git
+cd SI_2022_lab1_203067
+5.touch shopping_list.txt
+git add shopping_list.txt
+git commit -m "Add 5 items to the shopping list"
+6.git add shopping_list.txt
+git commit -m "Add quantities to the items."
+7.git checkout -b branch1
+git checkout -b branch2
+8. git log
+commit 52e84e25ce016c21e30bcf8c2ad1bb3f6d47e105 (HEAD -> branch2, master, branch1)
+Author: kokialeksov23 <nikola.aleksov@students.finki.ukim.mk>
+Date:   Thu Mar 31 12:21:24 2022 +0200
+
+    Add quantities to the items.
+
+commit fd45bea07917e5a98217950de2df269d667ff0c1
+Author: kokialeksov23 <nikola.aleksov@students.finki.ukim.mk>
+Date:   Thu Mar 31 12:16:10 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit b3d13a4010f1c2dc0aa920cb4619e075229c2789 (origin/master, origin/HEAD)
+Author: kokialeksov23 <102740430+kokialeksov23@users.noreply.github.com>
+Date:   Thu Mar 31 12:05:30 2022 +0200
+Initial commit
+
+9.git push --set-upstream origin branch2
+git checkout branch1
+git push origin branch1
+git checkout master
+git push
+10. git checkout branch1
+11.git commit -m "Change quantity of item #5"
+12.git checkout master
+13.git add shopping_list.txt
+git commit -m "Change quantity of item #2"
+14.git push origin master
+git checkout branch1
+git push origin branch1
+15.git checkout branch2
+16.git add shopping_list.txt
+git commit -m "Modify item #4"
+17.commit cf929131fc3823274a3f439d5dead996394cf2d3 (HEAD -> branch2)
+Author: kokialeksov23 <nikola.aleksov@students.finki.ukim.mk>
+Date:   Thu Mar 31 13:07:30 2022 +0200
+
+    Modify item #4
+
+commit 52e84e25ce016c21e30bcf8c2ad1bb3f6d47e105 (origin/branch2)
+Author: kokialeksov23 <nikola.aleksov@students.finki.ukim.mk>
+Date:   Thu Mar 31 12:21:24 2022 +0200
+
+    Add quantities to the items.
+
+commit fd45bea07917e5a98217950de2df269d667ff0c1
+Author: kokialeksov23 <nikola.aleksov@students.finki.ukim.mk>
+Date:   Thu Mar 31 12:16:10 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit b3d13a4010f1c2dc0aa920cb4619e075229c2789
+Author: kokialeksov23 <102740430+kokialeksov23@users.noreply.github.com>
+Date:   Thu Mar 31 12:05:30 2022 +0200
+
+    Initial commit
+
+18.
+
+git add shopping_list.txt
+git commit --amend
+
+19.
+git log
+commit 0b373b2f4c74df3197dd9ef3e9bfcf290ae7dcd9 (HEAD -> branch2)
+Author: kokialeksov23 <nikola.aleksov@students.finki.ukim.mk>
+Date:   Thu Mar 31 13:10:27 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 52e84e25ce016c21e30bcf8c2ad1bb3f6d47e105 (origin/branch2)
+Author: kokialeksov23 <nikola.aleksov@students.finki.ukim.mk>
+Date:   Thu Mar 31 12:21:24 2022 +0200
+
+    Add quantities to the items.
+
+commit fd45bea07917e5a98217950de2df269d667ff0c1
+Author: kokialeksov23 <nikola.aleksov@students.finki.ukim.mk>
+Date:   Thu Mar 31 12:16:10 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit b3d13a4010f1c2dc0aa920cb4619e075229c2789
+Author: kokialeksov23 <102740430+kokialeksov23@users.noreply.github.com>
+Date:   Thu Mar 31 12:05:30 2022 +0200
+
+    Initial commit
+20.git checkout master
+git merge branch1
+21.
+git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+Ovde se pojavuva konflikt i treba da go razresime
+so toa sto ce prifanime edna od promenite na master ili branch2
+git add shopping_list.txt
+git commit -m "Merge branch 'branch2'"
+
+22.git touch 203067.txt
+ls
+git status
+git add 203067.txt
+git commit -m "Add docs"
+
+23.git push
+
+
+
+
+
