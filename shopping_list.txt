@@ -2,5 +2,5 @@
 2.kechap x4
 3.leb x2
 4.smoki x3
-5.kashkaval x1
+5.kashkaval x2
 
