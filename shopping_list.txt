@@ -1,5 +1,6 @@
-1.sapun
-2.kechap
-3.leb
-4.smoki
-5.kashkaval
+1.sapun x2
+2.kechap x1
+3.leb x2
+4.smoki x3
+5.kashkaval x1
+
